@@ -1,0 +1,66 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-start (click)="nav.pop()">
+        <ion-icon name="arrow-back"></ion-icon>
+        {{'global.button.back' | translate}}
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="myheader">
+    <div class="avatar">
+      <div class="theimg" tappable>
+        <div (click)="addimg()">
+          <img [src]="'assets/img/avatars/default-M.png'" alt="">
+        </div>
+      </div>
+      <div class="name font-38">{{groupInfo?.name}}</div>
+      <div class="company font-28">{{groupInfo?.desc}}</div>
+
+    </div>
+  </div>
+
+  <div class="group-member" tappable (click)="goIndexList()">
+    <div class="num">
+      <div class="font-28">{{'chat.group_members' | translate}}</div>
+      <div class="font-28 right">
+        <div>{{members.length}}{{'global.desc.people' | translate }}</div>
+        <ion-icon name="ios-arrow-forward"></ion-icon>
+      </div>
+    </div>
+    <div class="avatar">
+      <img *ngFor="let member of members" [chat-avatar]="member.username"
+           [src]="member | formatAvatar" alt="">
+      <!--<div class="handle-member">-->
+        <!--<ion-icon name="add"></ion-icon>-->
+      <!--</div>-->
+      <!--<div class="handle-member">-->
+        <!--<ion-icon name="remove"></ion-icon>-->
+      <!--</div>-->
+    </div>
+  </div>
+
+  <ion-list class="color-radios">
+    <button detail-none ion-item  tappable (click)="showPrompt()" text-center>
+      <div item-left class="font-28">
+        {{'chat.group_name' | translate}}
+      </div>
+      <div item-right class="font-28" ion-text color="lightDark">
+        {{groupInfo?.name}}
+      </div>
+    </button>
+  </ion-list>
+
+  <ion-list class="color-radios">
+    <button detail-none ion-item  tappable (click)="exitGroup()" text-center>
+      {{'chat.exit_the_group_chat' | translate}}
+    </button>
+  </ion-list>
+
+
+</ion-content>
+
