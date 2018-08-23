@@ -91,10 +91,14 @@ export class MyInfoPage {
             correctOrientation: true,
             cameraDirection:1
         });
+        console.log(imageData,'=====00');
+
         const newimg = normalizeURL(imageData);
         // 裁剪图片
-
+        console.log(newimg,'=====01');
         const imgWH:any = await this.nativeService.imgWH(newimg);
+        console.log('=====02');
+
         if(imgWH.width<200 || imgWH.height<200){
             this.nativeService.showToast('编辑失败，头像必须是最小宽度大于200px且是正方形的图片',2500);
             return;
@@ -140,14 +144,14 @@ export class MyInfoPage {
                 }
             }
 
-            const res2=await this.authService.updataUser(this.formInfo).toPromise();
-            localStorage.setItem('OAUserInfo',JSON.stringify(res2.result));
+            // const res2=await this.authService.updataUser(this.formInfo).toPromise();
+            // localStorage.setItem('OAUserInfo',JSON.stringify(res2.result));
             loading.onDidDismiss(async () => {
-                if(res2.status){
-                    this.events.publish('changeTeam');
-                    this.navCtrl.pop();
-                    this.updateIMInfo(res2.result);
-                }
+                // if(res2.status){
+                //     this.events.publish('changeTeam');
+                //     this.navCtrl.pop();
+                //     this.updateIMInfo(res2.result);
+                // }
             });
 
 

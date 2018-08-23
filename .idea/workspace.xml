@@ -2,75 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5c0741-5366-4797-abeb-170903582460" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/auth/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auth/login/login.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auth/login/login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auth/login/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/tabs/tabs.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/myInfo/myInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/myInfo/myInfo.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/myInfo/myInfo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/user.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/user.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/user/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/100x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/account-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/avatars/default-F.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/avatars/default-M.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/avatars/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/icons/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/icons/sms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/no-data/no-data7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/welcome1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/welcome2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/welcome3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/welcome4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/yoov-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/config/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/control-message/form-message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/control-message/form-message.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/control-message/form-message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/control-message/from-message.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/core.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/interceptor/default.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/pipe/chat-avatar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/pipe/ellipsis.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/pipe/formatAvatar.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/pipe/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/shared/shared.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environment/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/emoji.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/native.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ionic-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ionic-chat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionic.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about/about.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about/about.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact/contact.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact/contact.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/tabs/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tabs/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/tabs/tabs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tabs/tabs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,12 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="myInfo.ts" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="myInfo.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="104" column="37" lean-forward="true" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+            <state relative-caret-position="203">
+              <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -96,23 +30,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/chat/chat.service.ts">
+      <file leaf-file-name="core.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/core.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="274" column="44" lean-forward="true" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
+            <state relative-caret-position="375">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="e#0#71#0" expanded="true" />
+                <element signature="e#220#272#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@ionic-native/android-permissions/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="328">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -120,17 +69,29 @@
       <file leaf-file-name="myInfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="315">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat-list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/chat/chat-list/chat-list.html">
+      <file leaf-file-name="native.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/providers/native.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="47" column="61" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="47" selection-end-column="61" />
+            <state relative-caret-position="287">
+              <caret line="374" selection-start-line="374" selection-end-line="374" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/chat/chat.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;input</find>
       <find>sel-area-active</find>
       <find>show-area-code</find>
       <find>area-code</find>
@@ -178,6 +138,7 @@
       <find>newUserIcon</find>
       <find>sourcetype</find>
       <find>chatService.update</find>
+      <find>authservice</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -190,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/environment/environment.ts" />
         <option value="$PROJECT_DIR$/src/common/config/config.ts" />
         <option value="$PROJECT_DIR$/src/providers/native.service.ts" />
@@ -239,8 +199,9 @@
         <option value="$PROJECT_DIR$/src/app/user/myInfo/myInfo.html" />
         <option value="$PROJECT_DIR$/src/common/pipe/chat-avatar.ts" />
         <option value="$PROJECT_DIR$/src/app/chat/chat.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts" />
       </list>
     </option>
   </component>
@@ -285,8 +246,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="492" />
-    <option name="y" value="23" />
+    <option name="x" value="426" />
+    <option name="y" value="24" />
     <option name="width" value="1578" />
     <option name="height" value="974" />
   </component>
@@ -315,21 +276,6 @@
               <item name="ionic-chat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ionic-chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ionic-chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ionic-chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ionic-chat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="chat-list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ionic-chat" type="b2602c69:ProjectViewProjectNode" />
@@ -431,27 +377,28 @@
       <workItem from="1534467688343" duration="20074000" />
       <workItem from="1534553846029" duration="565000" />
       <workItem from="1534726751438" duration="17316000" />
+      <workItem from="1534899183920" duration="598000" />
+      <workItem from="1534986166246" duration="4745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44727000" />
+    <option name="totallyTimeSpent" value="50070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="492" y="23" width="1578" height="974" extended-state="0" />
+    <frame x="426" y="24" width="1578" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17533718" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297619" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17533718" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297619" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,6 +407,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297619" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,27 +417,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="3897" column="12" selection-start-line="3897" selection-start-column="12" selection-end-line="3897" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ionic-angular/components/toast/toast.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/chat/chat-form/chat-form.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/chat/index-employee/index-employee.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -610,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/native.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/auth/register/register.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -628,9 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,9 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,9 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,9 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-373">
           <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,13 +642,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -755,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,9 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,17 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/core.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-            <element signature="e#220#272#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,35 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/chat/chat-list/chat-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="47" column="61" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="47" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="104" column="37" lean-forward="true" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/chat/chat.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="274" column="44" lean-forward="true" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="705">
+          <caret line="47" column="61" selection-start-line="46" selection-start-column="6" selection-end-line="47" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -848,6 +703,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/chat/chat.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/native.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="374" selection-start-line="374" selection-end-line="374" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@ionic-native/android-permissions/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/core.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+            <element signature="e#220#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/user/myInfo/myInfo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
