@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {ChatListPage} from "../chat/chat-list/chat-list";
 import {IonicPage} from "ionic-angular";
 
 @IonicPage()
@@ -9,7 +8,7 @@ import {IonicPage} from "ionic-angular";
 export class TabsPage {
 
   tab1Root = 'ChatListPage';
-  tab2Root = 'ChatListPage';
+  tab2Root = 'AddressBookPage';
   tab3Root = 'UserPage';
 
   constructor() {

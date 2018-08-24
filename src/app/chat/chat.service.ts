@@ -66,6 +66,7 @@ export class ChatService {
      * @param options
      */
     async jMessageInit() {
+        console.log('jMessageInit',111);
         // 初始化插件
         this.jMessage.init({isOpenMessageRoaming: true})
         //用户注册。
@@ -271,10 +272,17 @@ export class ChatService {
 
     }
 
-    async updateMyAvatar(imgPath: string) {
-        await this.jMessage.updateMyAvatar({
-            imgPath
-        });
+    async updateMyAvatar(path: string) {
+        try {
+            const imgPath = path.startsWith('file://') ? path.replace('file://', '') : path;
+            console.log(imgPath.substring(0,imgPath.indexOf('?')),278);
+            const res = await this.jMessage.updateMyAvatar({
+                imgPath: imgPath.substring(0,imgPath.indexOf('?'))
+            });
+            console.log(res, 281);
+        } catch (e) {
+            console.log(e);
+        }
     }
 
     // async updateMyAvatar(url: string) {

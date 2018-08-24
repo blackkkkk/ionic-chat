@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.chat.main" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>MyApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.2.51:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -11,7 +11,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://localhost:8080/*" />
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" />
     <feature name="CDVWKWebViewEngine">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
@@ -89,8 +89,9 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <allow-navigation href="http://192.168.2.51:8100" />
-    <plugin name="cordova-plugin-x-toast" spec="^2.6.2" />
+    <allow-navigation href="http://localhost:8080/*" />
     <plugin name="cordova-plugin-appminimize" spec="^1.0.0" />
+    <plugin name="cordova-plugin-x-toast" spec="^2.6.2" />
     <plugin name="cordova.plugins.diagnostic" spec="^4.0.8" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
@@ -98,7 +99,6 @@
     <plugin name="cordova-plugin-telerik-imagepicker" spec="^2.2.2">
         <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value="your usage message" />
     </plugin>
-    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="info.protonet.imageresizer" spec="^0.1.1" />
     <plugin name="jmessage-phonegap-plugin" spec="^3.5.0">
         <variable name="APP_KEY" value="3e605916717a925d17bca58f" />
@@ -110,6 +110,7 @@
     </plugin>
     <plugin name="cordova-plugin-crop" spec="^0.4.0" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^2.0.3" />
-    <engine name="android" spec="~7.0.0" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-ionic-webview" spec="^1.2.1" />
+    <engine name="android" spec="7.0.0" />
 </widget>

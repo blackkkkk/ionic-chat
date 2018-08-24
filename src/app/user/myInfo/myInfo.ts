@@ -103,12 +103,15 @@ export class MyInfoPage {
             this.nativeService.showToast('编辑失败，头像必须是最小宽度大于200px且是正方形的图片',2500);
             return;
         }
-        const newImage =  await this.crop.crop(imageData, {quality: 90, targetWidth: 200, targetHeight: 200});
+
+
 
         try{
+            const newImage =  await this.crop.crop(imageData, {quality: 90, targetWidth: 200, targetHeight: 200});
+            console.log(newImage,1);
             this.chatService.updateMyAvatar(normalizeURL(newImage));
         }catch (err) {
-            console.log(err);
+            console.log(err,3);
         }
 
     }

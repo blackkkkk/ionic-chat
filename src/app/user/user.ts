@@ -70,7 +70,7 @@ export class UserPage {
     }
 
     public toSetting() {
-        // this.navCtrl.push('SettingPage');
+        this.navCtrl.push('SettingPage');
     }
 
 
