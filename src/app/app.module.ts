@@ -7,15 +7,13 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {CoreModule} from "../common/core.module";
 import {NativeService} from "../providers/native.service";
-import {Contacts} from "../providers/contacts";
-import {HttpModule} from "@angular/http";
+import { IonAlphaScrollModule } from 'ionic4-alpha-scroll';
 
 @NgModule({
     declarations: [
         MyApp
     ],
     imports: [
-        HttpModule,
         BrowserModule,
         CoreModule,
         IonicModule.forRoot(MyApp, {
@@ -31,9 +29,9 @@ import {HttpModule} from "@angular/http";
     ],
     providers: [
         StatusBar,
+        IonAlphaScrollModule,
         SplashScreen,
         NativeService,
-        Contacts,
         {provide: ErrorHandler, useClass: IonicErrorHandler}
     ]
 })
