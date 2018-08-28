@@ -66,7 +66,7 @@ export class ChatService {
      * @param options
      */
     async jMessageInit() {
-        console.log('jMessageInit',111);
+        console.log('jMessageInit', 111);
         // 初始化插件
         this.jMessage.init({isOpenMessageRoaming: true})
         //用户注册。
@@ -261,9 +261,9 @@ export class ChatService {
 
     }
 
-    async getUserInfo(data): Promise<any> {
+    async getUserInfo(username): Promise<any> {
         try {
-            const userInfo = await this.jMessage.getUserInfo(data);
+            const userInfo = await this.jMessage.getUserInfo({username: username});
             return userInfo;
         } catch (e) {
             console.log(e, 'getUserInfo err');
@@ -272,12 +272,23 @@ export class ChatService {
 
     }
 
+    async getGroupInfo(groupId): Promise<any> {
+        try {
+            const groupInfo = await this.jMessage.getGroupInfo({id: groupId});
+            return groupInfo;
+        } catch (e) {
+            console.log(e, 'getGroupInfo err');
+            return false;
+        }
+
+    }
+
     async updateMyAvatar(path: string) {
         try {
             const imgPath = path.startsWith('file://') ? path.replace('file://', '') : path;
-            console.log(imgPath.substring(0,imgPath.indexOf('?')),278);
+            console.log(imgPath.substring(0, imgPath.indexOf('?')), 278);
             const res = await this.jMessage.updateMyAvatar({
-                imgPath: imgPath.substring(0,imgPath.indexOf('?'))
+                imgPath: imgPath.substring(0, imgPath.indexOf('?'))
             });
             console.log(res, 281);
         } catch (e) {
@@ -357,6 +368,22 @@ export class ChatService {
 
     getUserName(params) {
         // return this.http.get<IResponse>(`app/users`, {params})
+    }
+
+    async getFriends() {
+        try {
+            return await this.jMessage.getFriends();
+        } catch (err) {
+            return err;
+        }
+    }
+
+    async sendInvitationRequest(username, reason) {
+        try {
+            return await this.jMessage.sendInvitationRequest({username: username, reason: reason});
+        } catch (err) {
+            return err;
+        }
     }
 
 }

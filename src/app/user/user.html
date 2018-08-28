@@ -5,11 +5,11 @@
             <div class="avatar">
                 <div class="theimg" tappable>
                     <div tappable (click)="addimg()">
-                        <img [src]="info.avatar || 'assets/imgs/avatars/default-M.png'" alt="">
+                        <img *ngIf="userInfo" [src]="userInfo.avatarThumbPath">
                     </div>
                 </div>
-                <div class="name">{{info.name || '没有名字'}}</div>
-                <div class="company">{{info.teamName || '没有团队的名字'}}</div>
+                <div class="name">{{userInfo?.nickname || '没有名字'}}</div>
+                <div class="company">{{userInfo?.desc || ''}}</div>
 
             </div>
         </div>

@@ -1,6 +1,7 @@
 import {ChangeDetectorRef, Component} from '@angular/core';
-import {IonicPage, NavController} from 'ionic-angular';
+import {IonicPage, NavController, PopoverController} from 'ionic-angular';
 import * as _ from 'lodash';
+import {ChatService} from "../chat/chat.service";
 
 @IonicPage()
 @Component({
@@ -17,7 +18,8 @@ export class AddressBookPage {
   `;
     triggerAlphaScrollChange: number = 0;
 
-    constructor() {
+    constructor(private chatService: ChatService,
+                public popoverCtrl: PopoverController) {
         this.assignBreeds();
     }
 
@@ -28,7 +30,9 @@ export class AddressBookPage {
         this.triggerAlphaScrollChange++;
     }
 
-    assignBreeds() {
+    async assignBreeds() {
+        const res = await this.chatService.getFriends();
+        console.log(res, '~~~~');
         this.breeds = [
             {
                 "name": "Affenpinscher"
@@ -754,6 +758,20 @@ export class AddressBookPage {
                 "name": "Yorkshire Terrier Yorkie"
             }
         ]
+    }
+
+    addFriends(myEvent) {
+        const popover = this.popoverCtrl.create(
+            'PopoverPage',
+            {
+                data: [
+                    {
+                        page: 'AddFriendsPage',
+                        name: 'AddFriendsPage'
+                    }
+                ]
+            });
+        popover.present({ev: myEvent});
     }
 
     // ...

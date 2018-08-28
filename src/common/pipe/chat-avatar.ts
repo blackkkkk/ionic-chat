@@ -37,6 +37,8 @@ export class ChatAvatarDirective implements OnInit {
                 username: this.username
             });
 
+            console.log(filePath,'!!');
+
 
             this.el.nativeElement.src = normalizeURL(filePath);
 

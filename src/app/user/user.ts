@@ -16,11 +16,7 @@ import {ChatService} from "../chat/chat.service";
 })
 export class UserPage {
 
-    info: any = {
-        name: '',
-        teamName: '',
-        avatar: ''
-    }
+    userInfo: any;
     // 头像url 路径
     newUserIcon: string;
     oldUserIcon: string;
@@ -45,8 +41,8 @@ export class UserPage {
     }
 
     async getInfo() {
-        const res = await this.chatService.getMyInfo();
-        console.log(res);
+        this.userInfo = await this.chatService.getMyInfo();
+        console.log(this.userInfo);
     }
 
     public selectTeam() {
