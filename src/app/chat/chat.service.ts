@@ -386,4 +386,14 @@ export class ChatService {
         }
     }
 
+    async updateFriendNoteName(username, noteName) {
+        try {
+            console.log(username,noteName);
+            return await this.jMessage.updateFriendNoteName({username: username, noteName: noteName})
+        } catch (err) {
+            console.log(err);
+            return err;
+        }
+    }
+
 }

@@ -1,9 +1,17 @@
 import {Component} from "@angular/core";
-import {AlertController, Events, IonicPage, NavController, NavParams, ViewController} from "ionic-angular";
+import {
+    AlertController,
+    Events,
+    IonicPage,
+    ModalController,
+    NavController,
+    NavParams,
+    ViewController
+} from "ionic-angular";
 import {JMessagePlugin} from "@jiguang-ionic/jmessage";
 import * as _ from 'lodash';
 import {NativeService} from "../../../providers/native.service";
-import {ChatFormPage} from "../chat-form/chat-form";
+import {ChatService} from "../chat.service";
 
 @IonicPage()
 @Component({
@@ -23,9 +31,12 @@ export class ChatDetailPage {
                 public alertCtrl: AlertController,
                 public nativeService: NativeService,
                 private events: Events,
+                public modalCtrl: ModalController,
                 public viewCtrl: ViewController,
+                private chatService: ChatService,
                 private jMessage: JMessagePlugin) {
         this.info = this.navParams.get('data');
+        console.log(this.info, '~~~~~info');
     }
 
     ionViewDidLoad() {
@@ -35,8 +46,8 @@ export class ChatDetailPage {
         }
     }
 
-    ionViewWillLeave(){
-        if(this.nav.getActive().id === 'ChatDetailPage')this.events.publish('chat: refresh',this.groupInfo.name)
+    ionViewWillLeave() {
+        if (this.nav.getActive().id === 'ChatDetailPage') this.events.publish('chat: refresh', this.groupInfo.name)
     }
 
     async getGroupInfo() {
@@ -79,7 +90,7 @@ export class ChatDetailPage {
                 {
                     text: '确定',
                     handler: data => {
-                        if(_.isEmpty(data.title))return this.nativeService.showToast('不能为空');
+                        if (_.isEmpty(data.title)) return this.nativeService.showToast('不能为空');
                         this.updateGroupInfo(data.title);
                     }
                 }
@@ -108,7 +119,7 @@ export class ChatDetailPage {
                                 groupId: this.info.groupId
                             };
                             await this.deleteConversation(params);
-                            this.nav.remove(this.viewCtrl.index-1,1);
+                            this.nav.remove(this.viewCtrl.index - 1, 1);
                             this.nav.pop();
                         } catch (err) {
                             console.log(err);
@@ -134,13 +145,52 @@ export class ChatDetailPage {
 
     }
 
-    async deleteConversation(params){
-        try{
+    async deleteConversation(params) {
+        try {
             const res = await this.jMessage.deleteConversation(params);
             return res;
-        }catch (err) {
+        } catch (err) {
             console.log(err);
             return false;
         }
     }
+
+    setNoteName() {
+        let modal = this.modalCtrl.create('RemarkPage', {remark: this.info.noteName}, {
+            enterAnimation: 'modal-from-bottom-enter',
+            leaveAnimation: 'modal-from-bottom-leave',
+            cssClass: 'reject-remark-modal'
+        });
+        modal.present();
+
+        modal.onDidDismiss(async (data) => {
+            if (!_.isNil(data)) await this.chatService.updateFriendNoteName(this.info.username, data);
+        })
+    }
+
+    async addAddressBook() {
+        // callback...
+        // const myCallbackFunction = function (_params) {
+        //     return new Promise((resolve, reject) => {
+        //         console.log(_params);
+        //         resolve();
+        //     });
+        // }
+
+        // push page...
+        this.nav.push('InputTransferPage', {
+            callback: this.getPopCalback
+        });
+
+    }
+
+    getPopCalback(params) {
+        return new Promise((resolve, reject) => {
+            console.log(params,'first');
+            resolve(params);
+            console.log(params,'last');
+        })
+    }
+
+
 }

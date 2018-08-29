@@ -1,6 +1,6 @@
 import {NgModule, ErrorHandler} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
+import {IonicApp, IonicModule, IonicErrorHandler, Config} from 'ionic-angular';
 import {MyApp} from './app.component';
 
 import {StatusBar} from '@ionic-native/status-bar';
@@ -8,6 +8,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {CoreModule} from "../common/core.module";
 import {NativeService} from "../providers/native.service";
 import { IonAlphaScrollModule } from 'ionic4-alpha-scroll';
+import {ModalFromBottomEnter, ModalFromBottomLeave} from "./modal-transitions";
 
 @NgModule({
     declarations: [
@@ -36,4 +37,12 @@ import { IonAlphaScrollModule } from 'ionic4-alpha-scroll';
     ]
 })
 export class AppModule {
+    constructor(public config: Config) {
+        this.setCustomTransitions();
+    }
+
+    private setCustomTransitions() {
+        this.config.setTransition('modal-from-bottom-enter', ModalFromBottomEnter);
+        this.config.setTransition('modal-from-bottom-leave', ModalFromBottomLeave);
+    }
 }

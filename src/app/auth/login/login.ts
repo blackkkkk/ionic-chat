@@ -26,7 +26,7 @@ export class LoginPage {
     @ViewChild('focusinput') focusInput:ElementRef;
     @ViewChild(Content) content: Content;
 
-    myAccount: string = '13249305938';
+    myAccount: string = '13680713055';
     myPassword: string = '123456';
 
     // 账号，密码验证是否正确

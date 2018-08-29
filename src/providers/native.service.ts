@@ -2,7 +2,15 @@
  * Created by yanxiaojun617@163.com on 12-27.
  */
 import {Injectable} from "@angular/core";
-import {ToastController, LoadingController, Platform, Loading, AlertController, Keyboard as _Keyboard, normalizeURL} from "ionic-angular";
+import {
+    ToastController,
+    LoadingController,
+    Platform,
+    Loading,
+    AlertController,
+    Keyboard as _Keyboard,
+    normalizeURL
+} from "ionic-angular";
 import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
 import {Observable} from "rxjs";
@@ -443,6 +451,12 @@ export class NativeService {
         fileName += myDate.getMinutes().toString(); //分
         fileName += myDate.getSeconds().toString(); //秒
         return fileName;
+    }
+
+    getPopCalback(params) {
+        return new Promise((resolve, reject) => {
+            resolve(params);
+        })
     }
 
 

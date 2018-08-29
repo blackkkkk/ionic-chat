@@ -1,12 +1,7 @@
 <ion-header no-border>
-  <ion-toolbar>
-    <ion-buttons start>
-      <button ion-button icon-start (click)="nav.pop()">
-        <ion-icon name="arrow-back"></ion-icon>
-        {{'global.button.back' | translate}}
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
+  <ion-navbar>
+    <ion-title>detail</ion-title>
+  </ion-navbar>
 </ion-header>
 
 <ion-content>
@@ -24,42 +19,61 @@
     </div>
   </div>
 
-  <div class="group-member" tappable (click)="goIndexList()">
-    <div class="num">
-      <div class="font-28">{{'chat.group_members' | translate}}</div>
-      <div class="font-28 right">
-        <div>{{members.length}}{{'global.desc.people' | translate }}</div>
-        <ion-icon name="ios-arrow-forward"></ion-icon>
+  <div *ngIf="info.type === 'group'">
+    <div class="group-member" tappable (click)="goIndexList()">
+      <div class="num">
+        <div class="font-28">群成员</div>
+        <div class="font-28 right">
+          <div>{{members.length}}人</div>
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+        </div>
+      </div>
+      <div class="avatar">
+        <!--<img *ngFor="let member of members" [chat-avatar]="member.username"-->
+             <!--[src]="member | formatAvatar" alt="">-->
+        <!--<div class="handle-member">-->
+        <!--<ion-icon name="add"></ion-icon>-->
+        <!--</div>-->
+        <!--<div class="handle-member">-->
+        <!--<ion-icon name="remove"></ion-icon>-->
+        <!--</div>-->
       </div>
     </div>
-    <div class="avatar">
-      <img *ngFor="let member of members" [chat-avatar]="member.username"
-           [src]="member | formatAvatar" alt="">
-      <!--<div class="handle-member">-->
-        <!--<ion-icon name="add"></ion-icon>-->
-      <!--</div>-->
-      <!--<div class="handle-member">-->
-        <!--<ion-icon name="remove"></ion-icon>-->
-      <!--</div>-->
-    </div>
+
+    <ion-list class="color-radios">
+      <button detail-none ion-item  tappable (click)="showPrompt()" text-center>
+        <div item-left class="font-28">
+          群名称
+        </div>
+        <div item-right class="font-28" ion-text color="lightDark">
+          {{groupInfo?.name}}
+        </div>
+      </button>
+    </ion-list>
+
+    <ion-list class="color-radios">
+      <button detail-none ion-item  tappable (click)="exitGroup()" text-center>
+        退出群聊
+      </button>
+    </ion-list>
   </div>
 
-  <ion-list class="color-radios">
-    <button detail-none ion-item  tappable (click)="showPrompt()" text-center>
-      <div item-left class="font-28">
-        {{'chat.group_name' | translate}}
-      </div>
-      <div item-right class="font-28" ion-text color="lightDark">
-        {{groupInfo?.name}}
-      </div>
-    </button>
-  </ion-list>
+  <div *ngIf="info.type === 'user'">
+    <ion-list class="color-radios">
+      <button detail-none ion-item text-center tappable (click)="setNoteName()">
+        <div item-left class="font-28">
+          设置备注名
+        </div>
+        <div item-right class="font-28" ion-text color="lightDark">
+          {{info?.noteName}}
+        </div>
+      </button>
+    </ion-list>
 
-  <ion-list class="color-radios">
-    <button detail-none ion-item  tappable (click)="exitGroup()" text-center>
-      {{'chat.exit_the_group_chat' | translate}}
-    </button>
-  </ion-list>
+    <div class="btn-gradual">
+      <button  ion-button outline tappable (click)="addAddressBook()">添加到通讯录</button>
+    </div>
+  </div>
 
 
 </ion-content>

@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {ChatService} from "../../chat/chat.service";
+import * as _ from 'lodash';
 
 @IonicPage()
 @Component({
@@ -9,7 +10,7 @@ import {ChatService} from "../../chat/chat.service";
 })
 export class AddFriendsPage {
 
-    num: number;
+    num: number = 13249305938;
     type: string = 'single';
 
     constructor(public nav: NavController,
@@ -32,12 +33,13 @@ export class AddFriendsPage {
     async search(){
         const res = this.type === 'single' ? await this.getUserInfo() : await this.getGroupInfo();
         console.log(res,'resresres');
+        if(!_.isNil(res))this.nav.push('ChatDetailPage',{data: res});
     }
 
     async getUserInfo(){
         try{
             const data = await this.chatService.getUserInfo(this.num);
-            console.log(data,'~~~');
+            return data;
         }catch (err) {
             console.log(err);
         }
@@ -46,6 +48,7 @@ export class AddFriendsPage {
     async getGroupInfo(){
         try{
             const data = await this.chatService.getGroupInfo(this.num);
+            return data;
         }catch (err) {
             console.log(err);
         }
